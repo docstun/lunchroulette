@@ -61,6 +61,11 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def sample
+    @restaurant = Restaurant.sample
+    redirect_to @restaurant, notice: "Here is your random restaurant for today"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_restaurant
