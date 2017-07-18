@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lunchroulette</title>
+    <title><%= t("app.title") %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>Lunchroulette<small> - Find something tasty!</small></h1>
+        <h1><%= t("app.title") %><small> - <%= t("app.slogan") %></small></h1>
       </div>
 
       <%= yield %>
