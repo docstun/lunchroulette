@@ -1,9 +1,15 @@
 <center>
   <h1>Find a restaurant for lunch</h1>
   <%- if Restaurant.any? %>
-    <p><%= link_to "Take me to a random place", sample_restaurants_path, class: "btn btn-success btn-lg" %></p>
+    <p>
+      <%= link_to "Take me to a random place", sample_restaurants_path, class: "btn btn-success btn-lg" %>
+    </p>
   <%- else %>
-    <p><%= link_to "Take me to a random place", "#", class: "btn btn-success btn-lg disabled" %></p>
+    <p>
+      <%= link_to "Take me to a random place", "#", class: "btn btn-success btn-lg disabled" %>
+    </p>
   <%- end %>
-  <p><%= link_to "Manage restaurants", restaurants_path %></p>
+  <p>
+    <%= link_to "Manage restaurants", restaurants_path %>
+  </p>
 </center>
