@@ -1,15 +1,15 @@
 <center>
-  <h1>Find a restaurant for lunch</h1>
+  <h1><%=t('find_a_restaurant_for_lunch')%></h1>
   <%- if Restaurant.any? %>
     <p>
-      <%= link_to "Take me to a random place", sample_restaurants_path, class: "btn btn-success btn-lg" %>
+      @@<%=t('')%>d272c0af-b2cb-44db-9c3a-793fafeb1bda@@
     </p>
   <%- else %>
     <p>
-      <%= link_to "Take me to a random place", "#", class: "btn btn-success btn-lg disabled" %>
+      @@<%=t('')%>c7ad5a6b-0c17-44b2-bbea-3bfd05ae977e@@
     </p>
   <%- end %>
   <p>
-    <%= link_to "Manage restaurants", restaurants_path %>
+    @@<%=t('')%>9e52d755-22d2-4aa4-8b19-78bf2514cf27@@
   </p>
 </center>
