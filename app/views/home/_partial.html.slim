@@ -1,6 +1,6 @@
 div
-  h4 This is a partial
+  h4= t('home.partial.this_is_a_partial')
 
-  p I really don't have any time to localize this.
+  p= t('home.partial.i_really_don_t')
 
-  = link_to "There is a better way!", contact_path
+  = link_to t('home.partial.there_is_a_better'), contact_path
